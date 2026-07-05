@@ -3,3 +3,4 @@ libsm6
 libxrender1
 libglib2.0-0t64
 libgles2
+libegl1
