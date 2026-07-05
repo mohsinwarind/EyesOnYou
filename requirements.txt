@@ -1,4 +1,9 @@
 streamlit
-opencv-python
+streamlit-webrtc
+opencv-python-headless
 mediapipe
-numpy
+ultralytics
+gtts
+huggingface_hub
+python-dotenv
+av
