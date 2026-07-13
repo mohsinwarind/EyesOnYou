@@ -5,16 +5,14 @@
 ---
 
 ## What is Eyes On You?
-
-Eyes On You is a real-time focus monitoring application built on top of the Pomodoro technique. Instead of just being a timer, it actively watches you through your webcam and intervenes when you get distracted — using a Guardian AI that generates personalized, context-aware messages to snap you back to focus.
-
-The Guardian gets progressively angrier the more you slip up.
+I was having random conversation with one of my friend where she shared her need to do group study because self-accountability isn't everyone's cup of tea, so, it triggered me the idea to code **Eyes On You** which
+is a real-time focus monitoring application built on top of the Pomodoro technique. Instead of just being a timer, it actively watches you through your webcam and intervenes when you get distracted or pick up your phone using a Guardian AI that generates personalized, context-aware messages to snap you back to focus and the user specified guardian gets progressively angrier the more you slip up.
 
 ---
 
 ## How It Works
 
-You configure a Pomodoro session and upload a photo of someone you're intimidated by — a professor, a coach, a parent, anyone. When you get distracted during a work session, the Guardian activates: their photo appears on screen, an AI-generated message calls you out based on exactly what you were doing wrong, and a voice reads it out loud.
+You configure a Pomodoro session and upload a photo of someone you're intimidated by which could  a professor, a coach, a parent, anyone. When you get distracted during a work session, the Guardian activates: their photo appears on screen, an AI-generated message calls you out based on exactly what you were doing wrong, and a voice reads it out loud.
 
 ```
 Start Session
@@ -39,14 +37,14 @@ Session ends with analytics report
 **Focus Tracking**
 - MediaPipe Face Mesh with 468 landmarks for stable, accurate head pose estimation
 - Detects gaze direction: left, right, up, down, absent
-- YOLOv8n phone detection — catches you scrolling
+- YOLOv8n phone detection which catches you scrolling
 - Smoothing buffer eliminates jitter from natural head movement
 - Configurable grace period (3–15 seconds) before guardian activates
 
 **Guardian AI**
 - Upload any photo as your guardian
 - Claude-compatible LLM via HuggingFace Inference API generates context-aware messages
-- Messages are specific to what you're doing wrong — looking left gets a different response than looking at your phone
+- Messages are specific to what you're doing wrong , for instance , looking left gets a different response than looking at your phone
 - Four escalation levels based on distraction count: firm → annoyed → angry → full intimidation
 - Guardian appreciates you when you return to focus
 - 20-second cooldown between interventions so it doesn't nag constantly
@@ -111,7 +109,7 @@ eyes_on_you/
 **Local:**
 
 ```bash
-git clone https://github.com/yourusername/eyesonyou
+git clone https://github.com/mohsinwarind/EyesOnYou
 cd eyesonyou
 pip install -r requirements.txt
 cp .env.example .env
@@ -173,7 +171,7 @@ Back to focus for 3+ seconds? → Reset + appreciation message
 
 ---
 
-## Roadmap — v2.0
+## Roadmap — v2.0 (Hoping to implement soon)
 
 - **Video generation** — animate the guardian photo into short reaction clips using generative video models
 - **Premium TTS** — character voices via ElevenLabs or similar, matching the guardian's personality
@@ -183,8 +181,7 @@ Back to focus for 3+ seconds? → Reset + appreciation message
 
 ---
 
-## Built By
-
+## Built with love by
 Mohsin Ramzan
 ---
 
