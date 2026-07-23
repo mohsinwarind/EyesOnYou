@@ -1,6 +1,6 @@
 # Eyes On You — v1.0
 
-**An AI-powered Pomodoro focus coach that watches you work.**
+**An AI-powered Pomodoro focus coach that watches you work. (IK guys, user side rendering for live cam sucks because of WebRTC, trying to fix it ASAP)**
 
 ---
 
